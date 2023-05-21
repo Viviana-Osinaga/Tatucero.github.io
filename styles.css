@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+    color:rgb(237, 237, 242);
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(14, 14, 32);
+}
+
+/* nav */
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3px;
+    margin: 0;
+}
+li {
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+    padding: 4px;
+}
+li a {
+    text-decoration: none;
+    padding: 4px;
+}
+li a:hover {
+    text-shadow: -2px 2px 4px rgb(237, 237, 242);
+}
+/* section 1*/
+.acerca-de-mi {
+    width: 100%;
+    height: 20rem;
+    background-color: blue;
+    background: linear-gradient(to right, blue, red, magenta);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    border: 1px dotted rgb(237, 237, 242);
+}
+h1 {
+    text-align: center;
+    margin: 1rem;
+    padding: 0;
+    font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
+}
+h1:hover {
+    transform: rotate(-2, 2);
+}
+.hola {
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* sec-2 */
+
+.sec-2 {
+    width: auto;
+    height: 20rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.sec-uno {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sec-2 img {
+    width:15rem;
+    height: 15rem;
+}
+.sec-2 img:hover {
+    transform:scale(1.1, 1.1)
+}
+.sec-uno a i{
+    font-size: 3rem;
+}
+.sec-uno a i:hover {
+    text-shadow: -4px 4px 6px rgb(237, 237, 242);
+}
+
+/* jugados */
+.jugados {
+    width: 100%;
+    height: 32rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1.2rem;
+    border: 1px solid rgb(237, 237, 242);
+    /* animation: cambio 4s ease 0 infinite; */
+    animation-name: cambio;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+.juego {
+    width: 30%;
+    height: 30rem;
+}
+.juego img{
+    width: 90%;
+    height: 60%;
+}
+.juego img:hover {
+    box-shadow: 4px 4px 8px 4px rgb(237, 237, 242);
+}
+
+/* otros juegos */
+
+.otrosjuegos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+.uno {
+    text-align: center;
+}
+.uno p {
+    font-size: 1.2rem;
+}
+.dos img {
+    width: 98%;
+    height: 35rem;
+}
+
+/* formulario */
+.formulario {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 8rem;
+    border-top: 1px solid rgb(237, 237, 242);
+}
+.foot-1 p{
+    font-size: 1.1rem;
+}
+.foot-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.foot-2 i{
+    font-size: 1.2rem;
+    padding: 0.2rem;
+}
+.foot-2 i:hover {
+    text-shadow: -4px 4px 6px rgb(237, 237, 242);
+}
+
+@keyframes cambio {
+    0% {background: blue;}
+    50% {background: red;}
+    100% {background: blue;}
+}
+/*     80% {background: magenta;} */
