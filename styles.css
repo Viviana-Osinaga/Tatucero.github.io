@@ -161,9 +161,12 @@ h1:hover {
 .formulario {
     margin: 1rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+.formulario div {
+    padding: 1rem;
 }
 
 /* footer */
@@ -201,3 +204,11 @@ footer {
     100% {background: blue;}
 }
 /*     80% {background: magenta;} */
+@media (min-width:360px) and (max-width: 970px){
+    .uno p{
+        font-size: 90%;
+    }
+    .dos img {
+        height: 50%;
+    }
+}
