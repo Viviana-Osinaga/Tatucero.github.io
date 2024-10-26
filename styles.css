@@ -12,13 +12,13 @@ body {
 }
 
 /* nav */
+
 nav {
+    position: fixed;
     height: max-content;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position:sticky;
+    background-color: rgb(14, 14, 32);
+    border-bottom: 1px solid rgb(237, 237, 242);
+    width: 100%;
 }
 ul {
     display: flex;
